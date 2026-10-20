@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stations & Fares | Railway Platform Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚆 Railway Platform Ticket Booking</h1>
+    <p>Platform ticket fares and current platform crowd</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="stations.html">Stations &amp; Fares</a>
+    <a href="booking.html">Book Ticket</a>
+  </nav>
+  <div class="page">
+    <main>
+      <section>
+        <h2>Station Fare Table</h2>
+        <table>
+          <tr><th>Station</th><th>Code</th><th>Platforms</th><th>Fare</th></tr>
+          <tr><td>Madgaon</td><td>MAO</td><td>4</td><td>₹10</td></tr>
+          <tr><td>Vasco da Gama</td><td>VSG</td><td>3</td><td>₹10</td></tr>
+          <tr><td>Thivim</td><td>THVM</td><td>2</td><td>₹10</td></tr>
+          <tr><td>Karmali</td><td>KRMI</td><td>2</td><td>₹10</td></tr>
+          <tr><td>Canacona</td><td>CNO</td><td>2</td><td>₹10</td></tr>
+        </table>
+        <p><small>Fares shown are sample values for this project.</small></p>
+      </section>
+
+      <section>
+        <h2>Platform Crowd Level</h2>
+        <label for="c1">Madgaon (high)</label>
+        <meter id="c1" value="0.85" min="0" max="1" low="0.4" high="0.7" optimum="0.2">85%</meter>
+        <label for="c2">Thivim (low)</label>
+        <meter id="c2" value="0.2" min="0" max="1" low="0.4" high="0.7" optimum="0.2">20%</meter>
+        <label for="p1">Tickets sold today at Madgaon</label>
+        <progress id="p1" value="320" max="500">320 of 500</progress>
+      </section>
+    </main>
+
+    <aside>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Book a ticket</a></li>
+      </ul>
+      <!-- Inline CSS (Expt 4) -->
+      <p style="color: #b91c1c; font-weight: bold;">Tip: Book early on festival days!</p>
+    </aside>
+  </div>
+  <footer>
+    <p>&copy; 2026 Railway Platform Booking | Web tech Mini Project (HTML &amp; CSS)</p>
+  </footer>
+</body>
+</html>

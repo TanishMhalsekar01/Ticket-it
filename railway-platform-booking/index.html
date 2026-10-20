@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Railway Platform Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1> Railway Platform Ticket Booking</h1>
+    <p>Book your platform ticket online in a few clicks</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="stations.html">Stations &amp; Fares</a>
+    <a href="booking.html">Book Ticket</a>
+  </nav>
+  <div class="page">
+    <main>
+      <section>
+        <h2>Welcome</h2>
+        <img class="hero-img" src="Train.svg" alt="Blue passenger train standing at a platform" width="200" height="75">
+        <p>A platform ticket lets you enter the railway platform to receive or see off a passenger.
+        With this website you can book it in advance and skip the queue at the counter.</p>
+        <a class="btn" href="booking.html">Book Platform Ticket</a>
+      </section>
+
+      <section>
+        <h2>How It Works</h2>
+        <ol>
+          <li>Check the station and fare on the <a href="stations.html">Stations &amp; Fares</a> page.</li>
+          <li>Fill in the booking form with your details.</li>
+          <li>Submit the form and get your confirmation.</li>
+          <li>Show the confirmation at the platform entrance.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Station Video & Announcement</h2>
+
+        <h3>Station Tour</h3>
+        <video controls width="400" height="200">
+          <source src="train video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>Platform Announcement</h3>
+        <audio controls>
+          <source src="train.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+      </section>  
+
+      <section>
+        <h2>Popular Stations</h2>
+        <div class="cards">
+          <article class="card"><h3>Madgaon</h3><p class="price">₹10</p><p>2 hours validity</p></article>
+          <article class="card"><h3>Vasco da Gama</h3><p class="price">₹10</p><p>2 hours validity</p></article>
+          <article class="card"><h3>Thivim</h3><p class="price">₹10</p><p>2 hours validity</p></article>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <h3>Rules</h3>
+      <ul>
+        <li>Valid only for the station booked</li>
+        <li>Valid for 2 hours</li>
+        <li>Not valid for boarding a train</li>
+        <li>Carry a photo ID</li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <p>&copy; 2026 Railway Platform Booking | Web tech Mini Project (HTML &amp; CSS)</p>
+  </footer>
+</body>
+</html>

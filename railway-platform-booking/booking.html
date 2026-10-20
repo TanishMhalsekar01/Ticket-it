@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Ticket | Railway Platform Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Railway Platform Ticket Booking</h1>
+    <p>Fill in the form to book your platform ticket</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="stations.html">Stations &amp; Fares</a>
+    <a href="booking.html">Book Ticket</a>
+  </nav>
+  <div class="page">
+    <main>
+      <section>
+        <h2>Booking Form</h2>
+        <form action="confirmation.html" method="get">
+
+          <fieldset>
+            <legend>Passenger Details</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="10-digit phone number" pattern="[0-9]{10}" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Journey Details</legend>
+            <label for="station">Station</label>
+            <select id="station" name="station" required>
+              <option value="">-- Select station --</option>
+              <option value="MAO">Madgaon (MAO)</option>
+              <option value="VSG">Vasco da Gama (VSG)</option>
+              <option value="THVM">Thivim (THVM)</option>
+              <option value="KRMI">Karmali (KRMI)</option>
+              <option value="CNO">Canacona (CNO)</option>
+            </select>
+
+            <label for="date">Date of Visit</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="count">Number of Tickets (1 to 6)</label>
+            <input type="number" id="count" name="count" min="1" max="6" value="1" required>
+
+            <label>Reason for Visit</label>
+            <input type="radio" id="r1" name="reason" value="receive" checked>
+            <label class="inline-label" for="r1">Receive someone</label>
+            <input type="radio" id="r2" name="reason" value="seeoff">
+            <label class="inline-label" for="r2">See off someone</label>
+            <input type="radio" id="r3" name="reason" value="other">
+            <label class="inline-label" for="r3">Other</label>
+
+            <label>Extra Services</label>
+            <input type="checkbox" id="s1" name="service" value="wheelchair">
+            <label class="inline-label" for="s1">Wheelchair help</label>
+            <input type="checkbox" id="s2" name="service" value="porter">
+            <label class="inline-label" for="s2">Porter</label>
+
+            <label for="msg">Message (optional)</label>
+            <textarea id="msg" name="msg" rows="3" placeholder="Any special request?"></textarea>
+          </fieldset>
+
+          <input type="checkbox" id="agree" name="agree" required>
+          <label class="inline-label" for="agree">I agree to the platform ticket rules</label>
+          <br><br>
+          <input type="submit" value="Book Ticket">
+          <input type="reset" value="Reset">
+        </form>
+      </section>
+    </main>
+
+    <aside>
+      <h3>Note</h3>
+      <p>A <b>red</b> border means the entry is wrong; <b>green</b> means it is correct.</p>
+      <p>Fare: <b>₹10</b> per ticket.</p>
+    </aside>
+  </div>
+  <footer>
+    <p>&copy; 2026 Railway Platform Booking | College Mini Project (HTML &amp; CSS)</p>
+  </footer>
+</body>
+</html>
